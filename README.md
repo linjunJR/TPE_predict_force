@@ -67,12 +67,16 @@ Data is split **70 / 15 / 15** (train / val / test).
 ## Requirements
 
 ```
-torch
-torchvision
-numpy
-pandas
-pillow
-matplotlib
-opencv-python
-tqdm
+pip install -r requirements.txt
 ```
+
+| Package | Version |
+|---|---|
+| torch | 2.4.1 |
+| torchvision | 0.19.1 |
+| numpy | 1.23.5 |
+| pandas | 1.4.1 |
+| Pillow | 9.4.0 |
+| matplotlib | 3.7.1 |
+| opencv-python | 4.6.0.66 |
+| tqdm | 4.65.0 |

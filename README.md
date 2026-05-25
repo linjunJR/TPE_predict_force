@@ -64,6 +64,14 @@ Data is split **70 / 15 / 15** (train / val / test).
 
 ---
 
+## Demo results
+
+Predicted vs. true values on the held-out test set after fine-tuning:
+
+![Demo results](demo_results.png)
+
+---
+
 ## Requirements
 
 ```

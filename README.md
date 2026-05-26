@@ -2,7 +2,7 @@
 
 This repository contains code for training a ResNet18-based regression model that predicts **contact force magnitude and angle** from grayscale particle contact-region images, like the following image:
 
- ![Demo results](sample_data.png)
+ ![Demo results](sample_image.png)
 
 To train the model, we generated multiple synthetic images of photoelastic disks subject to randomly generated vector forces at random contact points. Note that the force vectors are assigned such that each disk is in equilibrium. We then crop out the contact regions from these synthetic images and use them as training data, with the known force magnitudes and angles as labels. The trained model can then be applied to real experimental images to estimate the underlying contact forces.
 

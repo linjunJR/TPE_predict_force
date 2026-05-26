@@ -1,4 +1,4 @@
-# About
+## About
 
 Contact force measurement is a fundamental challenge in granular materials research. This project trains a ResNet18-based model to predict contact force magnitude and direction from images, outperforming the traditional G² approximation in wet conditions, leading to better results in the ensuing force inversion process.
 

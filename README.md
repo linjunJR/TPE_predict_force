@@ -1,17 +1,22 @@
 # TPE Predict Force
 
-This repository contains code for training a ResNet18-based regression model that predicts **contact force magnitude and angle** from grayscale particle contact-region images, like the following image:
-
- ![Demo results](sample_image.png)
-
-To train the model, we generated multiple synthetic images of photoelastic disks subject to randomly generated vector forces at random contact points. Note that the force vectors are assigned such that each disk is in equilibrium. We then crop out the contact regions from these synthetic images and use them as training data, with the known force magnitudes and angles as labels. The trained model can then be applied to real experimental images to estimate the underlying contact forces.
-
-Crucially, the method outperforms the traditional G^2 approximation in wet disks, leading to better results in the ensuing force inversion process.
+Contact force measurement is a fundamental challenge in granular materials research. This project trains a ResNet18-based model to predict contact force magnitude and direction from images, outperforming the traditional G² approximation in wet conditions, leading to better results in the ensuing force inversion process.
 
 <table><tr>
 <td><img src="G2_results.png" alt="G2 results"/></td>
 <td><img src="CNN_results.png" alt="CNN results"/></td>
 </tr></table>
+ Force magnitudes and angles of a contact pair $ij$
+
+
+## Method 
+
+This project demonstrates CNN-based regression for estimating physical quantities directly from images. in this case, inferring force information from photoelaticity.
+This repository contains code for training a ResNet18-based regression model that predicts **contact force magnitude and angle** from grayscale particle contact-region images like this one:
+
+ ![Demo results](sample_image.png)
+
+To train the model, we generated multiple synthetic images of photoelastic disks subject to randomly generated vector forces at random contact points. Note that the force vectors are assigned such that each disk is in equilibrium. We then crop out the contact regions from these synthetic images and use them as training data, with the known force magnitudes and angles as labels. The trained model can then be applied to real experimental images to estimate the underlying contact forces.
 
 ---
 

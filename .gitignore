@@ -2,10 +2,6 @@
 *.pth
 *.pt
 
-# Training data
-*_data/
-data/
-
 # Python
 __pycache__/
 *.pyc
